@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 mongoose
   .connect(
-    "mongodb+srv://ashusharmads18:ashusharmads18@cluster0.npxjqpt.mongodb.net/"
+    "your_URL"
   )
   .then(() => console.log("database connected successfully"))
   .catch((e) => console.log(e));
