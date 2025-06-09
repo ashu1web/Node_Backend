@@ -10,4 +10,4 @@ const connecToDB=async()=>{
     }
 }
 
-module.exports=connecToDB
+module.exports=connecToDB 
