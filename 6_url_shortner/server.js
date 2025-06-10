@@ -30,8 +30,6 @@ app.set("views", path.join(__dirname, "views"));
 app.use('/', urlRoutes);
 
 
-
-
 // Start server
 app.listen(PORT, () => {
   console.log(`The server is running at port ${PORT}`);
