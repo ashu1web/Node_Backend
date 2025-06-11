@@ -63,7 +63,7 @@ export const login = async (req, res) => {
             })
         }
 
-        let token = jwt.sign({ userID: user._id }, '1234#$##@3^%',{
+        let token = jwt.sign({ userID: user._id },process.env.SECRET_KEY,{
             expiresIn:'1d'
         });
 
