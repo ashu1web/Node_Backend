@@ -47,7 +47,7 @@ export const login = async (req, res) => {
             })
         }
 
-        const user = await User.findOne({ email })
+        const user = await User.findOne({ email })   //or User.findOne({email:email})
         if (!user) {
             res.json({
                 success: false,
@@ -63,7 +63,7 @@ export const login = async (req, res) => {
             })
         }
 
-        let token = jwt.sign({ userID: user._id },process.env.SECRET_KEY,{
+        let token = jwt.sign({ userId: user._id },process.env.SECRET_KEY,{               //Only saved user's id-->user._id
             expiresIn:'1d'
         });
 
