@@ -12,7 +12,7 @@ connecToDB()
 
 //TO parse json and url data
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.json()); 
 
 
 //routes
